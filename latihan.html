@@ -10,30 +10,42 @@
       list-style: none;
       margin: 0;
       padding: 0;
+      display: flex;          /* Membuat item berjajar horizontal dengan Flexbox */
+      gap: 15px;              /* Jarak antar menu */
+      flex-wrap: wrap;        /* Turun ke baris baru jika layar sempit */
     }
-    
-    .menu li {
-      display: inline-block; /* Membuat item elemen berjajar horizontal */
-      margin-right: 15px; /* Memberi jarak ke samping */
-    }
-    
+
     .menu a {
+      display: block;
+      padding: 10px 24px;
       text-decoration: none;
       color: #333;
+      background-color: #f2f2f2;
+      border-radius: 30px;                      /* Bentuk kotak lonjong */
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.25); /* Efek bayangan */
+      transition: all 0.3s ease;
+    }
+
+    /* Efek saat kursor diarahkan ke menu */
+    .menu a:hover {
+      background-color: #4a90e2;
+      color: #fff;
+      transform: translateY(-3px);
+      box-shadow: 0 8px 14px rgba(0, 0, 0, 0.35);
     }
   </style>
-  
+
 </head>
 <body>
 
-<p>Ini adalah HTML dengan CSS dan Inline-Block.</p>
+<p>Ini adalah HTML dengan CSS dan Flexbox.</p>
 
 <ul class="menu">
-<li><a href="beranda.html">Beranda</a></li>
-<li><a href="sekolahku.html">Sekolahku</a></li>
-<li><a href="tentang-saya.html">Tentang Saya</a></li>
-<li><a href="syair-lagu.html">Syair Lagu</a></li>
-</ul> 
+  <li><a href="beranda.html">Beranda</a></li>
+  <li><a href="sekolahku.html">Sekolahku</a></li>
+  <li><a href="tentang-saya.html">Tentang Saya</a></li>
+  <li><a href="syair-lagu.html">Syair Lagu</a></li>
+</ul>
 
 <p>Dengan CSS, list di atas dapat diubah menjadi menu horizontal.<br>
   Ada dua cara mengubah list menjadi menu horizontal:</p>
