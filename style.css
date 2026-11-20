@@ -1,0 +1,227 @@
+
+/* PENGATURAN DASAR */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f8f6;
+    color: #26352e;
+    line-height: 1.7;
+}
+
+/* MENU NAVIGASI */
+header {
+    background: #123d32;
+    padding: 20px 8%;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.logo {
+    color: #ffffff;
+    font-size: 26px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    color: #a8e6b0;
+}
+
+/* HALAMAN BERANDA */
+.hero {
+    min-height: 75vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 60px 10%;
+}
+
+.hero h1 {
+    font-size: 42px;
+    margin: 15px 0;
+}
+
+.hero h1 span {
+    color: #23845e;
+}
+
+.hero h2 {
+    color: #527264;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    max-width: 650px;
+    margin-bottom: 20px;
+}
+
+.label {
+    color: #23845e;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+/* TOMBOL */
+.tombol,
+button {
+    display: inline-block;
+    background: #23845e;
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 30px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.tombol:hover,
+button:hover {
+    background: #123d32;
+    transform: translateY(-3px);
+}
+
+/* KONTEN HALAMAN */
+.container {
+    max-width: 1000px;
+    margin: auto;
+    padding: 60px 25px;
+}
+
+.content h1 {
+    font-size: 35px;
+    margin: 10px 0 20px;
+}
+
+.content h2 {
+    margin-top: 25px;
+    margin-bottom: 10px;
+}
+
+/* KEAHLIAN */
+.skills {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+.skills span {
+    background: #d9eee2;
+    color: #123d32;
+    padding: 10px 20px;
+    border-radius: 25px;
+}
+
+/* KARTU PROYEK */
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin-top: 25px;
+}
+
+.project-card {
+    background: white;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+    transition: 0.3s;
+}
+
+.project-card:hover {
+    transform: translateY(-6px);
+}
+
+.technology {
+    color: #23845e;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+/* KONTAK DAN FORM */
+.contact-info {
+    background: white;
+    padding: 25px;
+    border-radius: 15px;
+    margin: 20px 0;
+}
+
+.contact-info a {
+    color: #23845e;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 600px;
+}
+
+input,
+textarea {
+    padding: 13px;
+    border: 1px solid #ccd8d0;
+    border-radius: 8px;
+    font-family: Arial, sans-serif;
+    font-size: 15px;
+}
+
+.catatan {
+    font-size: 13px;
+    color: #68778b;
+    margin-top: 15px;
+}
+
+/* FOOTER */
+footer {
+    background: #123d32;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
+}
+
+/* TAMPILAN HP */
+@media (max-width: 700px) {
+    nav {
+        flex-direction: column;
+    }
+
+    nav ul {
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .hero h1 {
+        font-size: 30px;
+    }
+
+    .project-grid {
+        grid-template-columns: 1fr;
+    }
+}
